@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Love in the Dark</title>
+		<style type="text/css">
+			body 
+			{
+			  background: rgb(255, 255, 255);
+			  color: rgb(100, 100, 100);
+			  font-family: Verdana;
+			  font-size: 15px;
+			}
+
+			span 
+			{
+				display: inline-block;
+				transition: all 1s;
+				height: 1em;
+				width: auto;
+			}
+
+			.alternate
+			{
+				color: rgba(0, 0, 0, 0);
+				height: 0em;
+				width: 0em;
+			}
+
+			@media (prefers-color-scheme: dark) 
+			{
+			  body 
+			  {
+			    background: rgb(0, 0, 0);
+			    color: rgb(200, 200, 200);
+			  }
+
+			  .alternate 
+			  {
+				color: rgba(0, 0, 0, 0);
+				height: 1em;
+				width: auto;
+			  }
+			}
+		</style>
+	</head>
+
+	<body>
+		<h1>AN ODE TO <span class="alternate">TO THE LOVE OF</span> MY LIFE</h1>
+		<span class="alternate"></span>
+		<span>The golden sun shines bright and high</span>
+		<span class="alternate"></span>
+		<span>Across a clear and cloudless sky</span>
+		<span class="alternate"></span>
+		<span>The ocean waves roll warm and bright</span>
+		<span class="alternate"></span>
+		<span>Beneath the glowing morning light</span>
+	</body>
+</html>
