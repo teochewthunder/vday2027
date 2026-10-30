@@ -11,19 +11,23 @@
 			  font-size: 15px;
 			}
 
-			span 
-			{
-				display: inline-block;
-				transition: all 1s;
-				height: 1em;
-				width: auto;
-			}
-
 			.alternate
 			{
 				color: rgba(0, 0, 0, 0);
 				height: 0em;
 				width: 0em;
+				font-size: 0px;
+				transition: all 1s;
+			}
+
+			.poemContainer
+			{
+				padding: 1em;
+				border-radius: 20px;
+				border: 5px solid rgba(0, 0, 0, 0.5);
+				text-align: center;
+				width: 30em;
+				margin: 10% auto 0 auto;
 			}
 
 			@media (prefers-color-scheme: dark) 
@@ -39,20 +43,28 @@
 				color: rgba(0, 0, 0, 0);
 				height: 1em;
 				width: auto;
+				font-size: 15px;
+			  }
+
+			  .poemContainer
+			  {
+			  	border: 5px solid rgba(255, 255, 255, 0.5);
 			  }
 			}
 		</style>
 	</head>
 
 	<body>
-		<h1>AN ODE TO <span class="alternate">TO THE LOVE OF</span> MY LIFE</h1>
-		<span class="alternate">When you turn your gaze unto me</span>
-		<span>The golden sun shines bright and high</span>
-		<span class="alternate">My heart echoes a lullaby</span>
-		<span>Across a clear and cloudless sky</span>
-		<span class="alternate">Here we stand; at our very feet</span>
-		<span>The ocean waves roll warm and bright</span>
-		<span class="alternate">Our kiss is full of passion sweet</span>
-		<span>Beneath the glowing morning light</span>
+		<div class="poemContainer">
+			<h1>AN ODE TO <span class="alternate">TO THE LOVE OF</span> MY LIFE</h1>
+			<p class="alternate">When you turn your gaze unto me</p>
+			<p>The golden sun shines bright and high</p>
+			<p class="alternate">My heart echoes a lullaby</p>
+			<p>Across a clear and cloudless sky</p>
+			<p class="alternate">Here we stand; at our very feet</p>
+			<p>The ocean waves roll warm and bright</p>
+			<p class="alternate">Our kiss is full of passion sweet</p>
+			<p>Beneath the glowing morning light</p>			
+		</div>
 	</body>
 </html>
